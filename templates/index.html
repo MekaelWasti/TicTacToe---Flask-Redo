@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MINIMAX-TicTacToe</title>
+    <link rel="icon" href="icons/O.svg" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="static\styles\icons\O.svg" />
+    <link rel="stylesheet" href="static\styles\style.css" />
+  </head>
+  <body>
+    <!-- <div> -->
+    <!-- <img src="icons/Board.svg" alt="" /> -->
+    <!-- <img src="icons/X.svg" alt="" /> -->
+    <!-- <img src="icons/O.svg" alt="" /> -->
+    <!-- </div> -->
+
+    <main class="background">
+      <section class="title">
+        <h1 id="title" class="title">MINIMAX TICTACTOE</h1>
+      </section>
+
+      <!-- <section class="currentPlayer">
+        PLAYER <span id="playerTitle" class="displayPlayer playerX">X</span>'S
+        TURN
+      </section> -->
+      <section class="currentPlayer">
+        <span id="playerTitle" class="displayPlayer playerX"><br /></span>
+        <span id="pleaseWait" class="displayPlayer playerX"><br /></span>
+      </section>
+
+      <!-- Grid -->
+      <section class="parentContainer">
+        <section class="boardContainer">
+          <div class="boardTile"></div>
+          <div class="boardTile"></div>
+          <div class="boardTile"></div>
+          <div class="boardTile"></div>
+          <div class="boardTile"></div>
+          <div class="boardTile"></div>
+          <div class="boardTile"></div>
+          <div class="boardTile"></div>
+          <div class="boardTile"></div>
+        </section>
+      </section>
+
+      <!-- UTILITIES -->
+      <section class="endGameState"></section>
+      <section class="controls">
+        <button class="reset" onClick="window.location.reload(true)">
+          PLAY AGAIN
+        </button>
+      </section>
+    </main>
+    <script src="static\index.js"></script>
+  </body>
+</html>
