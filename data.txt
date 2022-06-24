@@ -1,5 +1,1 @@
-<<<<<<< HEAD
 {'UserMove': '1', 'AIMove': 5, 'GameEnded': False, 'winner': ''}
-=======
-{'UserMove': '2', 'AIMove': '', 'GameEnded': False}
->>>>>>> 73f554a853ff44d5d984c540365a2cd7a50b70c7

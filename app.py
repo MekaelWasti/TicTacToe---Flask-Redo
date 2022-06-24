@@ -1,11 +1,6 @@
-<<<<<<< HEAD
 from flask import Flask, render_template, request, jsonify, redirect, url_for
 from flask_cors import CORS
-# from livereload import Server
-# from app import app
-from turtle import pos
 import os
-import json
 import time
 from threading import Thread
 import subprocess
@@ -21,18 +16,10 @@ gameThread.start()
 
 # <strong>#Set up Flaskstrong>:
 turnCount = 0
-=======
-from turtle import pos
-from flask import Flask, request, jsonify
-from flask_cors import CORS
-import os
-import json
-import time
 
 
 
 # <strong>#Set up Flaskstrong>:
->>>>>>> 73f554a853ff44d5d984c540365a2cd7a50b70c7
 time1 = -float("Inf")
 app = Flask(__name__)
 #Set up Flask to bypass CORS at the front end:
@@ -94,7 +81,6 @@ def postME():
 @app.route("/sender", methods=["GET", "POST"])
 def sendME():
    read = False
-<<<<<<< HEAD
    global turnCount
    if turnCount == 0:
       time.sleep(5.0)
@@ -103,9 +89,7 @@ def sendME():
    else:
       print("2nd")
       time.sleep(1.5)
-=======
-   time.sleep(5.0)
->>>>>>> 73f554a853ff44d5d984c540365a2cd7a50b70c7
+   # time.sleep(5.0)
    while not read:
       # exec(open('fileWatch.py').read())
       # time1 = os.path.getmtime('data2.txt')
@@ -128,8 +112,3 @@ def sendME():
 
 if __name__ == "__main__": 
    app.run(debug=True)
-
-<<<<<<< HEAD
-=======
-
->>>>>>> 73f554a853ff44d5d984c540365a2cd7a50b70c7

@@ -1,9 +1,5 @@
 import time
 import ast
-import os
-import json
-import sys
-
 import time
 from watchdog.observers import Observer
 from watchdog.events import PatternMatchingEventHandler
@@ -56,14 +52,4 @@ while run:
         my_observer.stop()
         my_observer.join()
         break
-        # sys.exit(0)
-        # quit()
-        # exit()
-
-            # break
-        
-# except KeyboardInterrupt:
-# except run == False or KeyboardInterrupt:
-#     print('wow')
-#     my_observer.stop()
-# my_observer.join()
+   

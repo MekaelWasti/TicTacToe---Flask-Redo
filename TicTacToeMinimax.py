@@ -1,96 +1,10 @@
 import numpy as np
-import sys, os
 import copy
 import ast
-# from app import sendME 
-import time
 from watchdog.observers import Observer
 from watchdog.events import PatternMatchingEventHandler
 from threading import Thread
-import keyboard
 
-
-
-
-
-# def fileWatcher():
-
-#     # exitProgram = False
-
-#     # FILE WATCHER
-#     print("y e r o")
-#     # def exitCheck(exitProgram):
-#         # exitProgram = True
-#         # return exitProgram
-
-#     # if exitProgram == True:
-#         # return True
-    
-
-#     if __name__ == "__main__":
-#         patterns = ["*"]
-#         ignore_patterns = None
-#         ignore_directories = False
-#         case_sensitive = True
-#         my_event_handler = PatternMatchingEventHandler(patterns, ignore_patterns, ignore_directories, case_sensitive)
-
-        
-#     def userMove():
-#         with open('data.txt', 'r') as f:
-#             gameStatDict = f.readline()
-#             # gameStatDict = f.readline()
-#             gameStatDict = ast.literal_eval(gameStatDict)
-#             # gameStatDict = eval(gameStatDict)
-#             print(gameStatDict)
-#             # gameStatDict = json.loads(gameStatDict)
-#             print(gameStatDict["UserMove"])
-#             print("Worked")
-
-
-#     def on_modified(event):
-#         if event.src_path == ".\data2.txt":
-#             my_observer.stop()
-
-#             print(my_observer.is_alive())
-
-#             print("2")
-#             print(my_observer.ident)
-
-#             print(f"{event.src_path} has been modified")
-#             # exitCheck(exitProgram)
-#             # userMove()
-
-    
-
-#     my_event_handler.on_modified = on_modified
-    
-    
-
-#     path = "."
-#     go_recursively = True
-#     my_observer = Observer()
-#     my_observer.schedule(my_event_handler, path, recursive=go_recursively)
-
-
-#     my_observer.start()
-#     print("1")
-#     print(my_observer.ident)
-#     try:
-#         while True:
-#             time.sleep(1)
-#     except KeyboardInterrupt:
-#         my_observer.stop()
-#     my_observer.join()
-#         # sys.exit(1)
-
-    
-
-
-
-
-# GAME
-# thread = Thread(target=fileWatcher)
-# thread.start()
 
 
 board = np.array([
@@ -100,7 +14,6 @@ board = np.array([
 ])
 
 print(f'{board} \n')
-
 
 
 
@@ -253,13 +166,6 @@ def tictactoeGame():
                     print(f'Read UI Input: {gameStatDict["UserMove"]}')
                     read = True
 
-
-        # validMove = False
-        # while not validMove:
-        #     userMove = int(input("Select a tile: "))
-        #     if selectPosition(board,userMove, "O"):
-        #         validMove = True
-        #     print("\n", board)
         
         if gameEnded(board):
             result = evaluateBoard(board)
